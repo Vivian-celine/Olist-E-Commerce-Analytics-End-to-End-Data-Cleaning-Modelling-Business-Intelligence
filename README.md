@@ -142,11 +142,11 @@ Each visual was designed to tell a business story — not just display metrics.
 
 ### 🟢 Sales Overview
 
-![Sales Overview](image/sales%20overview.png)
+![Sales Overview](Images/sales%20overview.png)
 
 ### ⭐ Customer Experience
 
-![Customer Experience](image/customer%20experience.png)
+![Customer Experience](Images/customer%20experience.png)
 
 ---
 ##🔍 Key Insights
