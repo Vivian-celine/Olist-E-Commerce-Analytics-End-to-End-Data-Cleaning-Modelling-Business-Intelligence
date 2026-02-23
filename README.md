@@ -1,4 +1,4 @@
-📦 Olist E-Commerce Data Analysis
+##📦Olist E-Commerce Data Analysis
 
 Full-Cycle Data Cleaning, Modelling & Business Intelligence Project
 
@@ -8,7 +8,9 @@ This project performs a complete end-to-end analysis of the Brazilian Olist e-co
 
 The goal was not just to clean data — but to properly model interconnected tables, resolve orphan records, and build a robust analytical structure that supports reliable business insights.
 
-🎯 Project Objective
+---
+
+##🎯 Project Objective
 
 To evaluate overall business performance by analyzing:
 
@@ -22,7 +24,9 @@ To evaluate overall business performance by analyzing:
 
 ⭐ Customer satisfaction
 
-🗂 Dataset Description
+---
+
+###🗂 Dataset Description
 
 The dataset comes from the Olist Brazilian e-commerce marketplace.
 
@@ -42,7 +46,9 @@ Reviews
 
 The dataset follows a Snowflake Schema structure, requiring proper relationship management.
 
-🧹 Data Cleaning Process (Python)
+---
+
+##🧹 Data Cleaning Process (Python)
 1️⃣ Initial Exploration
 
 Used .info() to inspect structure and data types
@@ -82,7 +88,9 @@ These orphan rows caused broken relationships and blank visuals.
 
 After impact validation, they were removed to enforce referential integrity.
 
-🔄 Modelling Improvements
+---
+
+##🔄 Modelling Improvements
 
 ✔ Integrated customer_unique_id into Orders to create proper 1-to-many relationships
 ✔ Aggregated Reviews table for cleaner analytical use
@@ -91,7 +99,26 @@ After impact validation, they were removed to enforce referential integrity.
 
 This eliminated blank visuals and ensured analytical accuracy.
 
-📊 Dashboard Overview
+---
+
+## 📁 Repository Structure
+
+```
+Olist-Ecommerce-Analysis
+│
+├── image/
+│   ├── sales_overview.png
+│   └── customer_experience.png
+│
+├── notebook/
+│   └── olist_data_cleaning.ipynb
+│
+├── README.md
+│
+└── project_files_link.md   (Contains Google Drive links)
+```
+
+##📊 Dashboard Overview
 
 The final Power BI dashboard includes:
 
@@ -111,7 +138,18 @@ Loyal
 
 Each visual was designed to tell a business story — not just display metrics.
 
-🔍 Key Insights
+---
+
+### 🟢 Sales Overview
+
+![Sales Overview](image/sales%20overview.png)
+
+### ⭐ Customer Experience
+
+![Customer Experience](image/customer%20experience.png)
+
+---
+##🔍 Key Insights
 📈 Revenue Growth
 
 Revenue grew steadily from 2016 to 2018, with 2017 showing the strongest expansion — indicating rapid scaling and increasing market penetration.
@@ -148,7 +186,9 @@ However, a small subset of product categories consistently underperform — sign
 
 ~78% of revenue comes from credit card payments, indicating heavy reliance on a single payment method and potential financial channel risk.
 
-🛠 Tools Used
+---
+
+##🛠 Tools Used
 
 🐍 Python (Pandas, NumPy)
 
@@ -157,3 +197,18 @@ However, a small subset of product categories consistently underperform — sign
 🧠 Data Modelling (Snowflake Schema)
 
 📁 Git & GitHub
+
+---
+
+
+## 📂 Access to Full Project Files
+
+Due to GitHub file size limitations, the full dataset and Power BI dashboard file are hosted externally.
+
+- 📊 Power BI Dashboard (.pbix):  
+  [Download Here](https://drive.google.com/file/d/1XoNaYl-T1ch3C_sdckcKOWoMn3EaEm4k/view?usp=sharing)
+
+- 📁 Raw & Clean Dataset Files:  
+  [Download Here](https://drive.google.com/drive/folders/1VtiQKW2sxBEVm4UvjFlTwfSYD9TqNveJ?usp=sharing)
+
+---
