@@ -1,4 +1,4 @@
-##📦Olist E-Commerce Data Analysis
+## 📦Olist E-Commerce Data Analysis
 
 Full-Cycle Data Cleaning, Modelling & Business Intelligence Project
 
@@ -10,7 +10,7 @@ The goal was not just to clean data — but to properly model interconnected tab
 
 ---
 
-##🎯 Project Objective
+## 🎯 Project Objective
 
 To evaluate overall business performance by analyzing:
 
@@ -26,7 +26,7 @@ To evaluate overall business performance by analyzing:
 
 ---
 
-###🗂 Dataset Description
+### 🗂 Dataset Description
 
 The dataset comes from the Olist Brazilian e-commerce marketplace.
 
@@ -48,7 +48,7 @@ The dataset follows a Snowflake Schema structure, requiring proper relationship 
 
 ---
 
-##🧹 Data Cleaning Process (Python)
+## 🧹 Data Cleaning Process (Python)
 1️⃣ Initial Exploration
 
 Used .info() to inspect structure and data types
@@ -71,6 +71,8 @@ Removed unrealistic delivery times (> 90 days)
 
 Removed products with zero numeric values
 
+---
+
 🧠 Data Modelling & Orphan Row Detection
 
 Because this dataset is highly relational, improper modelling caused blanks in Power BI visuals.
@@ -90,7 +92,7 @@ After impact validation, they were removed to enforce referential integrity.
 
 ---
 
-##🔄 Modelling Improvements
+## 🔄 Modelling Improvements
 
 ✔ Integrated customer_unique_id into Orders to create proper 1-to-many relationships
 ✔ Aggregated Reviews table for cleaner analytical use
@@ -106,6 +108,10 @@ This eliminated blank visuals and ensured analytical accuracy.
 ```
 Olist-Ecommerce-Analysis
 │
+├──Data/
+│    ├── Raw data
+│    ├── Clean data
+│
 ├── image/
 │   ├── sales_overview.png
 │   └── customer_experience.png
@@ -113,12 +119,16 @@ Olist-Ecommerce-Analysis
 ├── notebook/
 │   └── olist_data_cleaning.ipynb
 │
-├── README.md
-│
-└── project_files_link.md   (Contains Google Drive links)
+│   
+├── Power bi/
+│    └── Olist-E-Commerce.pbix
+│  
+└── README.md
 ```
 
-##📊 Dashboard Overview
+---
+
+## 📊 Dashboard Overview
 
 The final Power BI dashboard includes:
 
@@ -149,7 +159,8 @@ Each visual was designed to tell a business story — not just display metrics.
 ![Customer Experience](Images/customer%20experience.png)
 
 ---
-##🔍 Key Insights
+
+## 🔍 Key Insights
 📈 Revenue Growth
 
 Revenue grew steadily from 2016 to 2018, with 2017 showing the strongest expansion — indicating rapid scaling and increasing market penetration.
@@ -158,6 +169,8 @@ Revenue grew steadily from 2016 to 2018, with 2017 showing the strongest expansi
 
 Sales are highly concentrated in São Paulo.
 The top three states contribute a disproportionate share of revenue — presenting geographic concentration risk.
+
+---
 
 🛍️ Product Revenue Drivers
 
@@ -168,19 +181,27 @@ beleza_saude
 
 cama_mesa_banho
 
+---
+
 🚚 Delivery & Satisfaction Relationship
 
 There is a clear negative relationship between delivery time and review score.
 Customer satisfaction drops significantly when delivery exceeds 21 days.
 
+---
+
 📍 Logistics Impact
 
 States with longer average delivery times tend to show lower review scores — reinforcing how operational efficiency affects customer perception.
+
+---
 
 ⭐ Customer Feedback Pattern
 
 Most reviews are 5-star ratings, showing generally positive sentiment.
 However, a small subset of product categories consistently underperform — signaling improvement opportunities.
+
+---
 
 💳 Payment Dependency Risk
 
@@ -188,27 +209,10 @@ However, a small subset of product categories consistently underperform — sign
 
 ---
 
-##🛠 Tools Used
+## 🛠 Tools Used
 
 🐍 Python (Pandas, NumPy)
 
 📊 Power BI
 
 🧠 Data Modelling (Snowflake Schema)
-
-📁 Git & GitHub
-
----
-
-
-## 📂 Access to Full Project Files
-
-Due to GitHub file size limitations, the full dataset and Power BI dashboard file are hosted externally.
-
-- 📊 Power BI Dashboard (.pbix):  
-  [Download Here](https://drive.google.com/file/d/1XoNaYl-T1ch3C_sdckcKOWoMn3EaEm4k/view?usp=sharing)
-
-- 📁 Raw & Clean Dataset Files:  
-  [Download Here](https://drive.google.com/drive/folders/1VtiQKW2sxBEVm4UvjFlTwfSYD9TqNveJ?usp=sharing)
-
----
